@@ -1,4 +1,4 @@
-import project1 from '../assets/Hr payroll.jpg';
+import project1 from '../assets/Hr Payroll.jpg';
 import project2 from '../assets/Railway.png';
 
 const Projects = () => {
