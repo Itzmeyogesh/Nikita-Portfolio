@@ -7,11 +7,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-between items-center bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white px-4 text-center overflow-hidden"
+      className="w-full px-4 py-10 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white text-center"
     >
-      {/* Top Content Block */}
-      <div className="flex flex-col items-center flex-grow justify-center pt-10">
-        {/* Profile Image */}
+      <div className="flex flex-col items-center">
         <motion.img
           src={profilePic}
           alt="Profile"
@@ -21,14 +19,13 @@ const Home = () => {
           transition={{ duration: 1 }}
         />
 
-        {/* Heading and Role */}
         <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">
           Hi, I'm Nikita Bhagwat
         </h1>
         <p className="text-xl md:text-2xl font-semibold text-blue-300 mb-4">
           <Typewriter
             words={['Software Developer', 'Full Stack Engineer', 'React | Node | PHP']}
-            loop={true}
+            loop
             cursor
             cursorStyle="|"
             typeSpeed={70}
@@ -37,14 +34,10 @@ const Home = () => {
           />
         </p>
 
-        {/* Career Objective */}
         <p className="max-w-2xl text-lg md:text-xl text-white/90 mb-6 leading-relaxed">
           Passionate and detail-oriented software developer with a strong foundation in React.js, Node.js, and PHP.
-          I aim to contribute to innovative projects where I can apply my technical skills to solve real-world problems
-          and continue growing as a full stack developer.
         </p>
 
-        {/* Social Icons */}
         <div className="flex gap-4 mb-6">
           <a
             href="https://www.linkedin.com/in/nikita-bhagwat-15901a26b"
@@ -64,7 +57,6 @@ const Home = () => {
           </a>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex gap-4 flex-wrap justify-center">
           <a
             href="/Nikita_Bhagwat_CV.pdf"
@@ -81,11 +73,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-      {/* Bottom Scroll Arrow */}
-      <a href="#about" className="mb-4 animate-bounce text-2xl">
-        ↓
-      </a>
     </section>
   );
 };
