@@ -36,10 +36,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="h-screen flex flex-col justify-between items-center px-6 py-10 bg-[#0a2647] text-white"
+      className="min-h-screen flex flex-col justify-between items-center px-6 py-10 bg-[#0a2647] text-white"
     >
       {/* Top Content */}
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-6xl flex-grow flex flex-col justify-center">
         <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {categories.map((cat, i) => (
@@ -62,7 +62,7 @@ const Skills = () => {
       </div>
 
       {/* Scroll Arrow to Projects Section */}
-      <a href="#projects" className="mt-10 mb-4 animate-bounce text-2xl">
+      <a href="#projects" className="mb-2 md:mb-4 animate-bounce text-2xl">
         ↓
       </a>
     </section>
