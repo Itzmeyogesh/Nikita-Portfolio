@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaPhp, FaDatabase, FaGitAlt, FaTools } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPhp, FaGitAlt, FaTools } from 'react-icons/fa';
 import { SiMysql, SiTailwindcss, SiBootstrap } from 'react-icons/si';
 
 const Skills = () => {
@@ -36,10 +36,9 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col justify-between items-center px-6 py-10 bg-[#0a2647] text-white"
+      className="w-full px-6 py-10 bg-[#0a2647] text-white"
     >
-      {/* Top Content */}
-      <div className="w-full max-w-6xl flex-grow flex flex-col justify-center">
+      <div className="w-full max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {categories.map((cat, i) => (
@@ -60,11 +59,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
-      {/* Scroll Arrow to Projects Section */}
-      <a href="#projects" className="mb-2 md:mb-4 animate-bounce text-2xl">
-        ↓
-      </a>
     </section>
   );
 };
