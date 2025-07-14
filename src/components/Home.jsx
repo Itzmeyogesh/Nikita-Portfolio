@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-between items-center bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white px-4 text-center"
+      className="min-h-screen flex flex-col justify-between items-center bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white px-4 text-center overflow-hidden"
     >
       {/* Top Content Block */}
-      <div className="flex flex-col items-center mt-10">
+      <div className="flex flex-col items-center flex-grow justify-center pt-10">
         {/* Profile Image */}
         <motion.img
           src={profilePic}
