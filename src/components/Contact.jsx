@@ -2,10 +2,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-between items-center px-6 py-10 bg-[#0f3460] text-white"
+      className="w-full px-6 py-10 bg-[#0f3460] text-white"
     >
-      {/* Heading + Form */}
-      <div className="w-full max-w-2xl flex-grow flex flex-col justify-center">
+      <div className="w-full max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10">Contact Me</h2>
         <form className="bg-white/5 p-8 rounded-xl shadow-md backdrop-blur-md">
           <div className="mb-6">
@@ -40,11 +39,6 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
-      {/* Bottom Scroll Arrow (optional) */}
-      <a href="#home" className="mb-2 md:mb-4 animate-bounce text-2xl">
-        ↑
-      </a>
     </section>
   );
 };
